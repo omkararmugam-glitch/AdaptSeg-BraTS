@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------- environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipython/
+.jupyter/
+
+# ------------------------------------------------------------------- notebooks
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------ data
+# BraTS 2020 is ~31 GB and is not ours to redistribute. README.md documents the
+# expected layout; download it from the challenge organisers.
+data/
+
+# --------------------------------------------------------------------- results
+# The slice caches are a derived artifact (6.4 GB for the full cohort alone) and
+# rebuild from the dataset in minutes. Checkpoints are ~70 MB per full run;
+# attach them to a GitHub Release or use Git LFS rather than committing them.
+results/cache/
+results/checkpoints/
+
+# Metrics ARE kept: they are small CSVs and they are the evidence for every
+# number in README.md and BUGS.md.
+!results/metrics/
+
+# ------------------------------------------------------------------------ misc
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor settings are personal, not project configuration.
+.vscode/
